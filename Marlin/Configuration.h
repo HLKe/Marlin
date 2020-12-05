@@ -1130,7 +1130,7 @@
 #define Y_MIN_POS -13
 #define Z_MIN_POS 0
 #define X_MAX_POS 280 // 284 max travel
-#define Y_MAX_POS 242 // 247 max travel
+#define Y_MAX_POS 234 // 247 max travel
 #define Z_MAX_POS 250
 
 /**
