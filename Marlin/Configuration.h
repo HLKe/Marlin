@@ -581,9 +581,9 @@
     #define DEFAULT_Kd_LIST {  76.55,  76.55 }
   #else
   // CR20 Pro
-#define DEFAULT_Kp 32.35
-#define DEFAULT_Ki 3.21
-#define DEFAULT_Kd 81.49
+#define DEFAULT_Kp 20.94
+#define DEFAULT_Ki 1.69
+#define DEFAULT_Kd 64.75
   #endif
 #endif // PIDTEMP
 
