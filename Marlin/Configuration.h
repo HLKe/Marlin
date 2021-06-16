@@ -1239,14 +1239,14 @@
 
 // The size of the print bed
 #define X_BED_SIZE 232
-#define Y_BED_SIZE 220
+#define Y_BED_SIZE 230
 
 // Travel limits (mm) after homing, corresponding to endstop positions.
-#define X_MIN_POS 0
-#define Y_MIN_POS -15
+#define X_MIN_POS 3
+#define Y_MIN_POS 5
 #define Z_MIN_POS 0
-#define X_MAX_POS 252
-#define Y_MAX_POS 220
+#define X_MAX_POS 250
+#define Y_MAX_POS 235
 #define Z_MAX_POS 250
 
 /**
@@ -1736,7 +1736,7 @@
 
 #if ENABLED(NOZZLE_PARK_FEATURE)
   // Specify a park position as { X, Y, Z_raise }
-  #define NOZZLE_PARK_POINT { (X_MIN_POS + 10), (Y_MAX_POS + 10), 20 }
+  #define NOZZLE_PARK_POINT { (X_MAX_POS), (Y_MAX_POS), 20 }
   //#define NOZZLE_PARK_X_ONLY          // X move only is required to park
   //#define NOZZLE_PARK_Y_ONLY          // Y move only is required to park
   #define NOZZLE_PARK_Z_RAISE_MIN   2   // (mm) Always raise Z by at least this distance
