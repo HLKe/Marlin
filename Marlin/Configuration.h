@@ -580,7 +580,7 @@
     #define DEFAULT_Ki_LIST {   1.54,   1.54 }
     #define DEFAULT_Kd_LIST {  76.55,  76.55 }
   #else
-  // CR20 Pro
+  // Jan CR20 Pro
 #define DEFAULT_Kp 20.94
 #define DEFAULT_Ki 1.69
 #define DEFAULT_Kd 64.75
@@ -620,11 +620,10 @@
   //#define MIN_BED_POWER 0
   //#define PID_BED_DEBUG // Sends debug data to the serial port.
 
-  // CR20 Pro
-  #define DEFAULT_bedKp 135.87
-  #define DEFAULT_bedKi 26.33
-  #define DEFAULT_bedKd 467.48
-
+  // Jan CR20 Pro
+  #define DEFAULT_bedKp 73.74
+  #define DEFAULT_bedKi 11.69
+  #define DEFAULT_bedKd 310.11
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.
 #endif // PIDTEMPBED
 
