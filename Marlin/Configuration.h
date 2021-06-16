@@ -1334,16 +1334,16 @@
 // @section machine
 
 // The size of the print bed
-#define X_BED_SIZE 232
-#define Y_BED_SIZE 230
+#define X_BED_SIZE 220
+#define Y_BED_SIZE 220
 
 // Travel limits (mm) after homing, corresponding to endstop positions.
-#define X_MIN_POS -2
-#define Y_MIN_POS -10
+#define X_MIN_POS 0
+#define Y_MIN_POS -16  // so BLtouch doesn't hit bed clips
 #define Z_MIN_POS 0
-#define X_MAX_POS 250
+#define X_MAX_POS 245
 #define Y_MAX_POS 233
-#define Z_MAX_POS 245
+#define Z_MAX_POS 250
 
 /**
  * Software Endstops
