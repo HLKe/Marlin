@@ -1334,16 +1334,16 @@
 // @section machine
 
 // The size of the print bed
-#define X_BED_SIZE 232
-#define Y_BED_SIZE 230
+#define X_BED_SIZE 220
+#define Y_BED_SIZE 220
 
 // Travel limits (mm) after homing, corresponding to endstop positions.
-#define X_MIN_POS -2
-#define Y_MIN_POS -10
+#define X_MIN_POS 0
+#define Y_MIN_POS -10  // so BLtouch doesn't hit bed clips
 #define Z_MIN_POS 0
-#define X_MAX_POS 250
-#define Y_MAX_POS 233
-#define Z_MAX_POS 245
+#define X_MAX_POS 245
+#define Y_MAX_POS 220
+#define Z_MAX_POS 250
 
 /**
  * Software Endstops
@@ -1841,12 +1841,12 @@
 
 #if ENABLED(NOZZLE_PARK_FEATURE)
   // Specify a park position as { X, Y, Z_raise }
-  #define NOZZLE_PARK_POINT { (X_MAX_POS), (Y_MAX_POS), 20 }
+  #define NOZZLE_PARK_POINT { (X_MAX_POS), (Y_MAX_POS), Z_MAX_POS }
   //#define NOZZLE_PARK_X_ONLY          // X move only is required to park
   //#define NOZZLE_PARK_Y_ONLY          // Y move only is required to park
   #define NOZZLE_PARK_Z_RAISE_MIN   2   // (mm) Always raise Z by at least this distance
-  #define NOZZLE_PARK_XY_FEEDRATE 100   // (mm/s) X and Y axes feedrate (also used for delta Z axis)
-  #define NOZZLE_PARK_Z_FEEDRATE    5   // (mm/s) Z axis feedrate (not used for delta printers)
+  #define NOZZLE_PARK_XY_FEEDRATE 166   // (mm/s) X and Y axes feedrate (also used for delta Z axis)
+  #define NOZZLE_PARK_Z_FEEDRATE    25   // (mm/s) Z axis feedrate (not used for delta printers)
 #endif
 
 /**
